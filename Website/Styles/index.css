@@ -1,0 +1,812 @@
+/* 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+*/
+::-webkit-scrollbar{
+    background-color: #2929293a;
+    width: 10px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffffffbe;
+    border-radius: 5px;
+}
+body{
+    background-color: #222831;
+    padding-top: 100px;
+}
+/* Header */
+.navIcon{
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+}
+div .carousel-item img{
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+    filter: invert(100%);
+}
+
+section article .storeCards{
+    display: inline-block;
+    width: fit-content;
+}
+section article{
+    text-align: center;
+}
+/* Cards */
+.wrapper{
+    margin-top: 50px;
+    padding-top: 50px;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+}
+/* Playstation */
+.wrapper .storeCardPS{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #263951;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardPS::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0070d1;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardPS:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardPS::after{
+    content: 'Playstation';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardPS .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardPS:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardPS .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardPS .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardPS:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardPS .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardPS .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardPS:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Xbox */
+.wrapper .storeCardXbox{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #143805;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardXbox::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #31850c;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardXbox:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardXbox::after{
+    content: 'Xbox';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardXbox .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardXbox:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardXbox .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardXbox .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardXbox:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardXbox .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardXbox .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardXbox:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Steam */
+.wrapper .storeCardSteam{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #070c10;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardSteam::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #28455c;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardSteam:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardSteam::after{
+    content: 'Steam';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardSteam .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardSteam:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardSteam .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardSteam .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardSteam:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardSteam .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardSteam .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardSteam:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* epicgames */
+.wrapper .storeCardEpicgames{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #0A0A0A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardEpicgames::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardEpicgames:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardEpicgames::after{
+    content: 'EpicGames';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardEpicgames .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardEpicgames:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardEpicgames .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardEpicgames .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardEpicgames:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardEpicgames .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardEpicgames .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardEpicgames:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Nintendo */
+.wrapper .storeCardNintendo{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #250002;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardNintendo::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #970008;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardNintendo:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardNintendo::after{
+    content: 'Nintendo';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardNintendo .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardNintendo:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardNintendo .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    filter: invert(100);
+}
+.wrapper .storeCardNintendo .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardNintendo:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardNintendo .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardNintendo .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardNintendo:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Amazon */
+.wrapper .storeCardAmazon{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #291800;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardAmazon::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFDEAD;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardAmazon:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardAmazon::after{
+    content: 'Amazon';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardAmazon .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardAmazon:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardAmazon .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardAmazon .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardAmazon:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardAmazon .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardAmazon .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardAmazon:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Android */
+.wrapper .storeCardAndroid{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #07310c;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardAndroid::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #27ff43;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardAndroid:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardAndroid::after{
+    content: 'Android';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardAndroid .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardAndroid:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardAndroid .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+}
+.wrapper .storeCardAndroid .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardAndroid:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardAndroid .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardAndroid .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardAndroid:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Apple */
+.wrapper .storeCardApple{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #161617;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.wrapper .storeCardApple::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a8a8af;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+
+}
+.wrapper .storeCardApple:hover:before{
+    clip-path: circle(300px at 80% -20%);
+    
+}
+.wrapper .storeCardApple::after{
+    content: 'Apple';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+.wrapper .storeCardApple .imgBox{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+
+}
+.wrapper .storeCardApple:hover .imgBox{
+    top: 0%;
+    transform: translateY(0%);
+}
+.wrapper .storeCardApple .imgBox img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    filter: invert(100);
+}
+.wrapper .storeCardApple .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.wrapper .storeCardApple:hover .contentBox{
+    height: 210px;
+}
+.wrapper .storeCardApple .contentBox h2{
+    position: relative;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .storeCardApple .contentBox a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.wrapper .storeCardApple:hover .contentBox a{
+    opacity: 100;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+/* Footer */
+footer{
+    position: relative;
+    bottom: 0;
+    padding-top: 5px;
+    margin-top: 100px;
+    background-color: #3c4757;
+    text-align: center;
+}
+footer a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #e1e1e1;
+    transition: 0.5s;
+}
+footer a:hover{
+    color: rgb(139, 176, 255);
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+footer a img{
+    height: 25px;
+}
+footer div h2, footer div h3{
+    color: #f9f9f9;
+}

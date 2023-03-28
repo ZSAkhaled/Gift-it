@@ -1,0 +1,105 @@
+<!-- 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/contactUs.css">
+    <title>Contact Us</title>
+    <script defer src="./Scripts/contactUs.js" ></script>
+    <link rel="icon" type="image/x-icon" href="./Media/Images/GiftIt/pageIcon.png">
+</head>
+<body>
+  
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Gift it.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html"><img class="navIcon" src="./Media/Images/HomePageNav/login.png" alt="Login image">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"><img class="navIcon" src="./Media/Images/HomePageNav/home.png" alt="Home image"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"><img class="navIcon" src="./Media/Images/HomePageNav/shopping-cart.png" alt="cart image">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/group.png" alt="contact about us">About us</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contactUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/contactUs.png" alt="contact us image">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactInfo"><img class="navIcon" src="./Media/Images/HomePageNav/contactInfo.png" alt="contact info image">Contact info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <h1>Contact us</h1>
+    <section class="container-fluid">
+        <article class="container">
+            <form id="myform" action="/processs" method="post">
+                <label for="fname">First Name:</label>                      
+                <input type="text" name="fname" class="name" id="fname" placeholder="First name" minlength="3" maxlength="22" required autofocus>
+                <label for="lname">Last Name:</label>                       
+                <input type="text" name="lname" class="name" id="lname"  placeholder="Last name" minlength="3" maxlength="22" required>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required >                        
+                    <option value="" disabled selected hidden >Select Gender</option>                        
+                    <option value="male">Male</option>                        
+                    <option value="female">Female</option>                    
+                </select>                     
+                <label for="mobile">Mobile Number</label>
+                <input type="text" name="phoneNumber" id="mobile" minlength="10" maxlength="10" placeholder="Enter your mobile number" required>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required onchange="formatDate(this)">
+                <label for = "email">Email Address</label>
+                <input type = "email" name = "email" id="email" maxlength="50" placeholder="info@gmail.com" required>                       
+                <label for = "language">Language of Communication </label>
+                <select name = "language" id = "language" required>
+                    <option value="" disabled selected hidden >Select Language</option>
+                    <option value = "Arabic">Arabic</option>
+                    <option value = "English">English</option>
+                    <option value = "French">French</option>
+                </select>
+                <label>Write your massage:</label> 
+                <textarea id="textarea" placeholder="write here.." name="message" rows="3" cols="40" required></textarea>
+                <p id="msg"></p>
+                <input class="button" type="submit" id="submit" value="SEND" onclick="validateForm(event)">
+                <input class="button" type="reset" id="clear" value="CLEAR">
+            </form>
+        </article>
+    </section>
+
+    <footer class="container-fluid" id="contactInfo">
+      <div class="container">
+          <h2>Contact Info</h2>
+          <a class="social" href="mailto:1948682@uj.edu.sa"><img src="./Media/Images/Footer/email.png" alt="Email logo"><p class="textIn-a">1948682@uj.edu.sa</p></a>
+          <a class="social" href="https://wa.me/0545323731"><img src="./Media/Images/Footer/Whatsapp.png" alt="Whatsapp logo"><p class="textIn-a">+966 54 532 3731</p></a>
+          <a class="social" href="https://twitter.com/gift_itKSA"><img src="./Media/Images/Footer/Twitter.png" alt="Twitter logo"><p class="textIn-a">gift_itKSA</p></a>
+          <a class="social" href="https://www.instagram.com/gift_itksa/"><img src="./Media/Images/Footer/Instagram.png" alt="Instagram logo"><p class="textIn-a">gift_itKSA</p></a>
+          <h3>All rights reserved &copy;2023 GiftIt.</h3>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+ -->
+ <!doctype html>
+ <html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,inirial-scale=1.0"> 
+     <title>Login</title> 
+     <link rel="stylesheet" href="./Styles/login.css">
+     <script src="./Scripts/login.js"></script>
+     <link rel="icon" type="image/x-icon" href="./Media/Images/GiftIt/pageIcon.png">
+ </head>
+ <body >
+     <div class="warppar "></div>
+     <header class="center">
+         <h1>Login</h1>
+         <section>
+             <form method="get" action="/login">
+                 <article class="txt_field">
+                     <input id="username" name="username" type="text" minlength="2" maxlength="22" pattern="[a-zA-Z][a-zA-Z0-9_-]{2,22}$" required>
+                     <span></span>
+                     <label >Username</label>
+                 </article>
+                 <article class="txt_field">
+                     <input id="password" name="password" type="password" minlength="8" maxlength="24" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}$" required>
+                     <span></span>
+                     <label >Password</label>
+                 </article>
+                 <input id="submit" onclick="validateForm(event)" class = "Submit" type="submit" value="Login">
+             </form>
+         </section>
+             <nav class="signup_link">
+                 <span>Not a member? <a class="hyper" href="register.html" >Sing up</a></span>
+                 <br>
+                 <span >Forgot password?<a class = "hyper" href="#"> reset password</a></span>
+             </nav>
+     </header>
+     <footer id="toast">
+        <p id="errorMessage">Error</p>
+     </footer>
+ </body>
+ </html>

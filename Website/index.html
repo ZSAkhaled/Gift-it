@@ -1,0 +1,198 @@
+<!-- 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <title>Home</title>
+    <script src="./Scripts/index.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./Media/Images/GiftIt/pageIcon.png">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gift it.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html"><img class="navIcon" src="./Media/Images/HomePageNav/login.png" alt="Login image">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><img class="navIcon" src="./Media/Images/HomePageNav/home.png" alt="Home image"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><img class="navIcon" src="./Media/Images/HomePageNav/shopping-cart.png" alt="cart image">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/group.png" alt="contact about us">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/contactUs.png" alt="contact us image">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactInfo"><img class="navIcon" src="./Media/Images/HomePageNav/contactInfo.png" alt="contact info image">Contact info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <section class="container-fluid">
+        <article class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Media/Images/HomeSlides/LaunchDaySales.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Media/Images/HomeSlides/LaunchDayBuy2.png" class="d-block w-100" alt="...">
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+              </div>
+            </article>
+    </section>
+
+    <section class="container-fluid">
+        <article class="container">
+
+          <div class="wrapper">
+            <div class="storeCardPS">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/PlaystationIcon.png" alt="Playstation section image">
+              </div>
+              <div class="contentBox">
+                <h2>Playstation Store Cards</h2>
+                <a onclick="nextPageHandler('Playstation')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardXbox">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/xboxIcon.png" alt="Xbox section image">
+              </div>
+              <div class="contentBox">
+                <h2>Xbox Store Cards</h2>
+                <a onclick="nextPageHandler('Xbox')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardSteam">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/steamIcon.png" alt="Steam section image">
+              </div>
+              <div class="contentBox">
+                <h2>Steam Store Cards</h2>
+                <a onclick="nextPageHandler('Steam')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardEpicgames">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/epicgamesIcon.png" alt="EpicGames section image">
+              </div>
+              <div class="contentBox">
+                <h2>Epic games Store Cards</h2>
+                <a onclick="nextPageHandler('EpicGames')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardNintendo">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/nintendoIcon.png" alt="Nintendo section image">
+              </div>
+              <div class="contentBox">
+                <h2>Nintendo Store Cards</h2>
+                <a onclick="nextPageHandler('Nintendo')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardAmazon">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/amazonIcon.png" alt="Amazon section image">
+              </div>
+              <div class="contentBox">
+                <h2>Amazon Store Cards</h2>
+                <a onclick="nextPageHandler('Amazon')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardAndroid">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/androidIcon.png" alt="Android section image">
+              </div>
+              <div class="contentBox">
+                <h2>Android Store Cards</h2>
+                <a onclick="nextPageHandler('Android')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <div class="storeCardApple">
+              <div class="imgBox">
+                <img src="./Media/Images/CardsSection/appleIcon.png" alt="Apple section image">
+              </div>
+              <div class="contentBox">
+                <h2>Apple Store Cards</h2>
+                <a onclick="nextPageHandler('Apple')" href="cards.html">View All</a>
+              </div>
+            </div>
+          </div>
+
+        </article>
+    </section>
+    
+    <footer class="container-fluid" id="contactInfo">
+      <div class="container">
+          <h2>Contact Info</h2>
+          <a class="social" href="mailto:1948682@uj.edu.sa"><img src="./Media/Images/Footer/email.png" alt="Email logo"><p class="textIn-a">1948682@uj.edu.sa</p></a>
+          <a class="social" href="https://wa.me/0545323731"><img src="./Media/Images/Footer/Whatsapp.png" alt="Whatsapp logo"><p class="textIn-a">+966 54 532 3731</p></a>
+          <a class="social" href="https://twitter.com/gift_itKSA"><img src="./Media/Images/Footer/Twitter.png" alt="Twitter logo"><p class="textIn-a">gift_itKSA</p></a>
+          <a class="social" href="https://www.instagram.com/gift_itksa/"><img src="./Media/Images/Footer/Instagram.png" alt="Instagram logo"><p class="textIn-a">gift_itKSA</p></a>
+          <h3>All rights reserved &copy;2023 GiftIt.</h3>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

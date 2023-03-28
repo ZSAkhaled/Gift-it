@@ -1,0 +1,176 @@
+<!-- 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./BootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Styles/cart.css">
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="./Media/Images/GiftIt/pageIcon.png">
+</head>
+<!--body-->
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Gift it.</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html"><img class="navIcon" src="./Media/Images/HomePageNav/login.png" alt="Login image">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"><img class="navIcon" src="./Media/Images/HomePageNav/home.png" alt="Home image"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="cart.html"><img class="navIcon" src="./Media/Images/HomePageNav/shopping-cart.png" alt="cart image">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/group.png" alt="contact about us">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactUs.html"><img class="navIcon" src="./Media/Images/HomePageNav/contactUs.png" alt="contact us image">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactInfo"><img class="navIcon" src="./Media/Images/HomePageNav/contactInfo.png" alt="contact info image">Contact info</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!--info-->
+    <section class="container-fluid">
+        <article class="container cart-page glass ">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <th>Card</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cartinfo">
+                                <img src="./Media/Images/CardsSection/XboxCards/Xbox100.png" alt="Xbox100$">
+                                <div>
+                                    <p>Xbox 100$ gift card</p>
+                                    <small>Price: $100.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" min="1" max="9" value="1"></td>
+                        <td>$100.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cartinfo">
+                                <img src="./Media/Images/CardsSection/SteamCards/Steam200.png" alt="Steam200$">
+                                <div>
+                                    <p>Steam 200$ gift card</p>
+                                    <small>Price: $200.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$200.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="cartinfo">
+                                <img src="./Media/Images/CardsSection/PlaystationCards/Playstation20.png" alt="Playstation20$">
+                                <div>
+                                    <p>Playstation 20$ gift card</p>
+                                    <small>Price: $20.00</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td><input type="number" value="2"></td>
+                        <td>$40.00</td>
+                    </tr>
+                </table>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$340.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax: 15%</td>
+                            <td>$51.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$391.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <section class="container-fluid">
+        <article class="container">
+                <div class="leftBtn">
+                    <a href="index.html" class="button">GO BACK</a>
+                </div>
+                <div class="rightBtn">
+                    <a href="#" class="button">GO NEXT</a>
+                </div>
+            
+        </article>
+    </section>
+    
+    <!--payment-->
+    <section class="container-fluid payments">
+        <article class="container glass">
+            <div class="card ">
+                <img src="./Media/Images/Payment/mada.png" alt="Payment mada">
+            </div>
+            <div class="card ">
+                <img src="./Media/Images/Payment/mobily.png" alt="mobily">
+            </div>
+            <div class="card ">
+                <img src="./Media/Images/Payment/stc.png" alt="stc">
+            </div>
+            <div class="card ">
+                <img src="./Media/Images/Payment/visa.png" alt="visa">
+            </div>
+        </article>
+    </section>
+
+    <footer class="container-fluid" id="contactInfo">
+        <div class="container">
+            <h2>Contact Info</h2>
+            <a class="social" href="mailto:1948682@uj.edu.sa"><img src="./Media/Images/Footer/email.png" alt="Email logo"><p class="textIn-a">1948682@uj.edu.sa</p></a>
+            <a class="social" href="https://wa.me/0545323731"><img src="./Media/Images/Footer/Whatsapp.png" alt="Whatsapp logo"><p class="textIn-a">+966 54 532 3731</p></a>
+            <a class="social" href="https://twitter.com/gift_itKSA"><img src="./Media/Images/Footer/Twitter.png" alt="Twitter logo"><p class="textIn-a">gift_itKSA</p></a>
+            <a class="social" href="https://www.instagram.com/gift_itksa/"><img src="./Media/Images/Footer/Instagram.png" alt="Instagram logo"><p class="textIn-a">gift_itKSA</p></a>
+            <h3>All rights reserved &copy;2023 GiftIt.</h3>
+        </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

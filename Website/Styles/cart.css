@@ -1,0 +1,218 @@
+/* 
+    Khaled Al-shehri 2042360
+    Saad Al-harbi 2041985
+    Abdullah Rafee 1948682
+*/
+::-webkit-scrollbar{
+    background-color: #2929293a;
+    width: 10px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffffffbe;
+    border-radius: 5px;
+}
+body{
+    background-color: #222831;
+    padding-top: 100px;
+}
+
+.navIcon{
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+}
+
+section article{
+    margin-top: 150px;
+}
+
+div .carousel-item img{
+    border-radius: 25px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators{
+    filter: invert(100%);
+}
+section article .card{
+    display: inline-block;
+    width: fit-content;
+}
+section article.uscard{
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+}
+section article h1{
+    text-align: left;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.cardsContainer{
+    margin-top: 150px;
+}
+/*go back btn*/
+.rightBtn{
+    float: right;
+    width: fit-content;
+}
+.leftBtn{
+    float: left;
+    width: fit-content;
+}
+.button{
+    text-decoration: none;
+    background-color: #0070d1;
+    color: #fff;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    transition: 0.3s;
+    position: relative;
+    left: 0;
+    float: left;
+
+    
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*buy now */
+.btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0070d1;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rfba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*card*/
+.card{
+    width: 18rem;
+    display: inline-block;
+    margin: 10px 5px;
+    border-radius: 30px; 
+}
+.card img{
+    background: #393E46;
+    border: #222831 2px solid;
+    border-radius: 30px;
+}
+
+.glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid ragb(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    text-align: center;
+}
+
+/*cart*/
+.cart-page{
+    color: #fff;
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.cartinfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #0070d1;
+    font-weight: normal;
+    
+}
+td{
+    padding: 10px 5px;
+  
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #04b4fa;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid  #0070d1;
+    width: 100%;
+    max-width: 450px;
+}
+/*  */
+.payments{
+    margin-top: 300px;
+}
+/*  */
+footer{
+    position: relative;
+    bottom: 0;
+    padding-top: 5px;
+    margin-top: 100px;
+    background-color: #3c4757;
+    text-align: center;
+}
+footer a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #e1e1e1;
+    transition: 0.5s;
+}
+footer a:hover{
+    color: rgb(139, 176, 255);
+    transition: 0.5s;
+    transform: translateY(-10px);
+}
+footer a img{
+    height: 25px;
+}
+footer div h2, footer div h3{
+    color: #f9f9f9;
+}
